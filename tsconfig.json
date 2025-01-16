@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Use a modern target suitable for Node.js
+    "lib": ["ES2020"], // Include ECMAScript 2020 library features
+    "module": "CommonJS", // Node.js uses CommonJS modules
+    "moduleResolution": "Node", // Resolve modules in Node.js style
+    "rootDir": "./src", // Specify the root directory of your source files
+    "outDir": "./dist", // Output directory for compiled files
+    "strict": true, // Enable strict type-checking options
+    "esModuleInterop": true, // Allow default imports from CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Enforce case-sensitive imports
+    "skipLibCheck": true, // Skip type checks on declaration files
+    "resolveJsonModule": true, // Allow importing JSON files
+    "noImplicitAny": true, // Disallow `any` types unless explicitly declared
+    "isolatedModules": true, // Ensure each file can be transpiled in isolation
+    "emitDecoratorMetadata": true, // Required for decorators (useful for libraries like TypeORM)
+    "experimentalDecorators": true, // Enable experimental decorators
+    "incremental": true, // Speed up subsequent compilations
+    "allowJs": true, // Allow JavaScript files in the project
+    "noFallthroughCasesInSwitch": true, // Ensure all switch cases are handled
+    "baseUrl": ".", // Base directory for module resolution
+    "paths": {
+      "@/*": ["src/*"] // Create a path alias for cleaner imports
+    }
+  },
+  "include": ["src/**/*.ts"], // Include all TypeScript files in the src directory
+  "exclude": ["node_modules"] // Exclude node_modules, build output, and test files
+}
