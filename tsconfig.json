@@ -20,6 +20,7 @@
     "noFallthroughCasesInSwitch": true, // Ensure all switch cases are handled
     "baseUrl": ".", // Base directory for module resolution
     "paths": {
+      "@": ["src"],
       "@/*": ["src/*"] // Create a path alias for cleaner imports
     }
   },
